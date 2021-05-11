@@ -1,0 +1,16 @@
+{
+    "name": "fassoares/faturacartaobb",
+    "description": "Divide as despesas no m\u0000s do cart\u0000o de credito entre o Francisco e a Eunice",
+    "authors": [
+        {
+            "name": "Francisco Soares",
+            "email": "fassoares@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+}
