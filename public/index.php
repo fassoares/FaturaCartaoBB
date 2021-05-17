@@ -1,15 +1,8 @@
 <?php
     require_once('../vendor/autoload.php');
+    require_once('../app/config/config.php');
     require_once('../app/functions/functions.php');
-
-    use app\controller\testeController;
-    
-
-    $controller = new TesteController();
     (new \app\core\RouterCore());
-
-    dd($controller->seta());
-
 ?>
 
 <!DOCTYPE html>
@@ -29,9 +22,11 @@
             <h1 class="text-center text-uppercase">Criar o Arquivo CSV da fatura do cartão do mês corrente</h1>
             <h2 class="text-center text-uppercase">BUSCAR ARQUIVO COM OS DADOS</h2>
         </header>
-        <form method="post" action ="criarbase.php" enctype="multipart/form-data">
+        <form method="post" action ="../app/model/criarcsvfaturacartao.php" enctype="multipart/form-data">
+            <br>
             <label>Arquivo</label>
-            <!-- <input type="file" name="arquivoTxt"> <br><br> -->
+            <br>
+            <input type="file" name="arquivoTxt"> <br><br>
             <input type="submit" value="buscar arquivo">
         </form>
     </body>
